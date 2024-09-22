@@ -1,23 +1,31 @@
 programa
 {
+	/*
+	Programa para ler um número inteiro qualquer e mostrar as seguintes operações:
+	- Soma                - Diferença
+	- Produto             - Quociente inteiro
+	- Quociente real      - Resto da divisão(Módulo)
+	Autora: Joziane Oliveira 
+	*/	
+	
 	inclua biblioteca Tipos 
 	funcao inicio () 
 	{ 
-		inteiro n1
-		inteiro n2
-		
-		escreva("Digite um valor: ")
+		//Declaração de variáveis
+		inteiro n1, n2
+		//Entrada de dados
+		escreva("\nDigite um valor: ")
 		leia(n1)
 		escreva("Digite outro valor: ")
 		leia(n2)
-		
-		escreva("-------RESULTADOS-------\n")
-		escreva("SOMA = ", n1 + n2, "\n")
-		escreva("DIFERENÇA = ", n1 - n2, "\n")
-		escreva("DIVISÃO INTEIRA = ", n1 / n2, "\n")
-		escreva("DIVISÃO REAL = ", Tipos.inteiro_para_real(n1) / n2, "\n")
-		escreva("RESTO DA DIVISÃO = ", n1 %  n2, "\n")
-		 
+		//Saída de resultados
+		escreva("\n-------RESULTADOS-------")
+		escreva("\nSOMA = "+ (n1 + n2))
+		escreva("\nDIFERENÇA = "+ (n1 - n2))
+		escreva("\nDIVISÃO INTEIRA = "+ (n1 / n2))
+		escreva("\nDIVISÃO REAL = "+ (Tipos.inteiro_para_real(n1) / n2))
+		escreva("\nRESTO DA DIVISÃO = "+ (n1 %  n2))
+		escreva("\n------------------------\n\n")		 
 	}
 }
 
@@ -26,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 470; 
+ * @POSICAO-CURSOR = 809; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
