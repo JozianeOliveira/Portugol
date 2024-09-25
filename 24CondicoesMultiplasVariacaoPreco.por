@@ -9,7 +9,7 @@ programa
 	funcao inicio()
 	{
 
-	real valor
+	real valor, vpreco
 	inteiro opcao
 		
 		escreva("Digite o preço de um produto R$ ")
@@ -27,16 +27,28 @@ programa
 		leia(opcao)
 		escreva("\n--------------------------------------------")
 
+		vpreco = 0
+
 		escolha (opcao) {
-			caso 1: escreva("\nNa época do CARNAVAL, o preço do produto vai para R$" + (valor + (valor * 10/100)) + ".")
+			caso 1: 
+			vpreco = valor + (valor * 10/100)
+			escreva("\nNa época do Carnaval, o preço do produto vai para R$" + vpreco + ".")
 			pare
-			caso 2: escreva("\nNa época do CARNAVAL, o preço do produto vai para R$" + (valor + (valor * 20/100)) + ".")
+			caso 2: 
+			vpreco = valor + (valor * 20/100)
+			escreva("\nNa época das Férias escolares, o preço do produto vai para R$" + vpreco + ".")
 			pare
-			caso 3: escreva("\nNa época do CARNAVAL, o preço do produto vai para R$" + (valor + (valor * 5/100)) + ".")
+			caso 3:
+			vpreco = valor + (valor * 5/100)
+			escreva("\nNa época do Dia das crianças, o preço do produto vai para R$" + vpreco + ".")
 			pare
-			caso 4: escreva("\nNa época do CARNAVAL, o preço do produto vai para R$" + (valor - (valor * 30/100)) + ".")
+			caso 4: 
+			vpreco = valor - (valor * 30/100)
+			escreva("\nNa época do Black Friday, o preço do produto vai para R$" + vpreco + ".")
 			pare
-			caso 5: escreva("\nNa época do CARNAVAL, o preço do produto vai para R$" + (valor - (valor * 5/100)) + ".")
+			caso 5: 
+			vpreco = valor - (valor * 5/100)
+			escreva("\nNa época do Natal, o preço do produto vai para R$" + vpreco + ".")
 			pare
 			caso contrario: escreva("\nOpção inválida. Digite uma opção válida.")
 		}
@@ -50,7 +62,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1337; 
+ * @POSICAO-CURSOR = 699; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
