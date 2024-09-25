@@ -9,15 +9,17 @@ programa
 	
 	funcao inicio()
 	{
-	real num
+	real num, resp
 	
 		escreva("Digite um número: ")
 		leia(num)
 
 		se (num > 0) {
-			escreva("\nO inverso de " + num + " é igual a " + (1 / num) + ".\n")
+			resp = 1/num
+			escreva("\nO inverso de " + num + " é igual a " + resp + ".\n")
 		} senao {
-			escreva("\nO oposto ou valor absoluto de " + num + " é igual a " + (num * (-1)) + ".\n")
+			resp = num * (-1)
+			escreva("\nO oposto ou valor absoluto de " + num + " é igual a " + resp + ".\n")
 		}
 	}
 }
@@ -26,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 514; 
+ * @POSICAO-CURSOR = 539; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
