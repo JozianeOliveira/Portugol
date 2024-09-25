@@ -5,16 +5,17 @@ programa
 	deseja fazer, digita dois numeros, o programa fará o cálculo e 
 	mostrará o resultado. Utiliza Condições Múltiplas.
 	*/
-	
+
+	inclua biblioteca Tipos --> t
 	funcao inicio()
 	{
 		inteiro opcao, n1, n2	
 	
 		escreva("\n		========================")
-		escreva("\n		+	Adição")
-		escreva("\n		-	Subtração")
-		escreva("\n		*	Multiplicação")
-		escreva("\n		/	Divisão")
+		escreva("\n		1	Adição")
+		escreva("\n		2	Subtração")
+		escreva("\n		3	Multiplicação")
+		escreva("\n		4	Divisão")
 		escreva("\n		========================\n")
 
 		escreva("\n		Digite sua opção: ")
@@ -50,7 +51,7 @@ programa
 		  		   escreva("\nResulto da multiplicação = " + (n1 * n2))
 			pare
 			caso 4: escreva("\nCalculando o valor de " + n1 + " / " + n2)
-		  		   escreva("\nResultado da divisão = " + (n1 / n2))
+		  		   escreva("\nResultado da divisão = " + (t.inteiro_para_real(n1) / n2))
 			pare
 			caso contrario: escreva("\nCalculando o valor de " + n1 + " ? " + n2)
 						 escreva("\nNão foi possível fazer tal operação. \nPreencha com uma opção válida.")
@@ -72,7 +73,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1379; 
+ * @POSICAO-CURSOR = 421; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
