@@ -7,16 +7,20 @@ programa
 	
 	funcao inicio()
 	{
-	real distancia
+	real distancia, fator, total
 	
 		escreva("Informe a distância total da viagem, em Km: ")
-		leia(distancia)
+		leia(distancia)
 
-		se (distancia < 200) {
-			escreva("\nUma viagem de " + distancia + "Km vai custar R$0.5/Km. Valor total: R$" + (0.5 * distancia) + ".\n") 
+		se (distancia <= 200) {
+			fator = 0.5
 		} senao {
-			escreva("\nUma viagem de " + distancia + "Km vai custar R$0.35/Km. Valor total: R$" + (0.35 * distancia) + ".\n")
+			fator = 0.35
 		}
+		total = distancia * fator
+
+		escreva("\nUma viagem de " + distancia + "Km vai custar R$" + fator + "/km.\n") 
+		escreva("\nValor total: R$" + total + ".\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 157; 
+ * @POSICAO-CURSOR = 383; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
