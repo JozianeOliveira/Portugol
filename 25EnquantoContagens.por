@@ -3,9 +3,12 @@ programa
 	/*
 	Programa "Realizando contagens", recebe o começo da contagem, 
 	o término e o incremento (variação). Devolvendo o resultado 
-	utilizando a repetição enquanto (teste lógico no início)
+	utilizando a repetição enquanto (teste lógico no início).
+	Terá uma pausa entre a apresentação de cada elemento, usando a biblioteca
+	Util, componente aguarde.
 	*/
 	
+	inclua biblioteca Util --> u
 	funcao inicio()
 	{
 	inteiro num, ini, fim, incremento
@@ -20,6 +23,7 @@ programa
 		num = ini
 		enquanto (num <= fim) {
 			escreva(num + " - ")
+			u.aguarde(500)
 			num += incremento
 		}
 
@@ -31,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 541; 
+ * @POSICAO-CURSOR = 303; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
