@@ -4,6 +4,7 @@ programa
 	Programa "Lendo dados": vai recebendo valores até que '9999' seja digitado. Devolve a quantidade de valores válidos, a soma, a média e o maior valor.
 	*/
 
+	inclua biblioteca Matematica --> m
 	inclua biblioteca Tipos --> t
 	funcao inicio()
 	{
@@ -33,7 +34,7 @@ programa
 	escreva("\n========== FLAG DIGITADO ============")
 	escreva("\nAo todo você digitou " + cont + " valores")
 	escreva("\nA soma entre eles foi " + soma)
-	escreva("\nE a média foi " + media)
+	escreva("\nE a média foi " + m.arredondar(media, 2))
 	escreva("\nO maior valor digitado foi " + maior + "\n")
 	}
 }
@@ -42,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 167; 
+ * @POSICAO-CURSOR = 925; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
