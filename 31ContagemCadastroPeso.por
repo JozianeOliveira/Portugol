@@ -14,9 +14,13 @@ programa
 		escreva("Indique o peso de referência: ")
 		leia(pesoref)
 
-		escreva("\n----------------------------------\n")
 		enquanto (cont <= qtdde) {
-			escreva("")
+			escreva("\n----------------------------------\n")
+			escreva("		PESSOA " + cont + " de " + qtdde)
+			escreva("\n----------------------------------\n")
+
+			
+			
 		}
 	}
 }
@@ -25,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 523; 
+ * @POSICAO-CURSOR = 617; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
