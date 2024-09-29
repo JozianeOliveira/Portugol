@@ -3,7 +3,7 @@ programa
 
 	/*
 	Programa "Mais velho e mais novo": recebe o nome e idade de 5 pessoas. Retorna o nome e idade da pessoa mais jovem e da mais velha.
-	Utiliza 
+	Utiliza laços de repetição e condicionais, além da comparação de valores, devolvendo o maior e menor.
 	*/
 	
 	funcao inicio()
@@ -46,7 +46,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 289; 
+ * @POSICAO-CURSOR = 511; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
