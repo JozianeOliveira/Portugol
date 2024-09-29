@@ -7,7 +7,17 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("Olá Mundo")
+	inteiro qtdde, pesoref, cont = 1
+		
+		escreva("Quantidade de pessoas à cadastrar: ")
+		leia(qtdde)
+		escreva("Indique o peso de referência: ")
+		leia(pesoref)
+
+		escreva("\n----------------------------------\n")
+		enquanto (cont <= qtdde) {
+			escreva("")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -15,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 285; 
+ * @POSICAO-CURSOR = 523; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
