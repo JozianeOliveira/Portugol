@@ -2,7 +2,7 @@ programa
 {
 	/*
 	Programa "Analisando números": usuário escolhe quantos números serão sorteados, dos números sorteados, mostra quantos são maiores que 5 e
-	quantos são divisíveis por 3. Utiliza contagem, laçoes de repetição e condicionais
+	quantos são divisíveis por 3. Utiliza contagem, laços de repetição e condicionais
 	*/
 	
 	inclua biblioteca Util --> u
@@ -40,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 237; 
+ * @POSICAO-CURSOR = 207; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
