@@ -9,7 +9,7 @@ programa
 	funcao inicio()
 	{
 	inteiro cont = 1, idade, maior = 0, menor = 0
-	cadeia nome
+	cadeia nome, nomemaisvelho = "", nomemaisjovem = ""
 	
 		enquanto (cont <= 5){
 			escreva("\n--------------------\n")
@@ -19,22 +19,26 @@ programa
 			leia(nome)
 			escreva("Idade: ")
 			leia(idade)
-
+			
 			se (cont == 1) {
 				menor = idade
+				nomemaisjovem = nome
 				maior = idade
+				nomemaisvelho = nome
 			} senao {
 				se (idade < menor){
 					menor = idade
+					nomemaisjovem = nome
 				}
 				se(idade > maior) {
 					maior = idade
+					nomemaisvelho = nome
 				}
 			}
 			cont ++
 		}
-		escreva("\nApessoa mais jovem é " + + " que tem " + menor + "anos")
-		escreva("A pessoa mais velha é " + + "que tem " + maior + "anos\n")
+		escreva("\nA pessoa mais jovem é " + nomemaisjovem + " que tem " + menor + " anos")
+		escreva("\nA pessoa mais velha é " + nomemaisvelho + " que tem " + maior + " anos\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -42,7 +46,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 160; 
+ * @POSICAO-CURSOR = 289; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
