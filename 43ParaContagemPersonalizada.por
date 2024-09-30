@@ -21,11 +21,17 @@ programa
 		escreva("Passo: ")
 		leia(num3)
 
-		para(c = num1; c <= num2; c += num3) {
+		se (num1 < num2) {
+			para(c = num1; c <= num2; c += num3) {
+			escreva(c + "...")
+			u.aguarde(300)	
+			} 
+		} senao  se (num1 > num2) {
+			para(c = num1; c >= num2; c -= num3) {
 			escreva(c + "...")
 			u.aguarde(300)
+			}
 		}
-
 		escreva("ACABOU!\n")
 	}
 }
@@ -34,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 598; 
+ * @POSICAO-CURSOR = 1020; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
