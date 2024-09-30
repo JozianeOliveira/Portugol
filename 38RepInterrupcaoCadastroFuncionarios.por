@@ -14,8 +14,8 @@ Inclui funções da biblioteca Matemática para arredondamento e da biblioteca T
 	{
 	cadeia nome
 	caracter sexo, resp
-	real salario, maiorm = 0.0, mediam = 0.0, maismilf = 0.0, somam = 0.0, salreff = 1000.0
-	inteiro totm = 0, totf = 0, tot = 0
+	real salario, maiorm = 0.0, mediam = 0.0, somam = 0.0, salreff = 1000.0
+	inteiro totm = 0, totf = 0, tot = 0, maismilf = 0
 	
 		enquanto (verdadeiro) {
 			escreva("Nome: ")
@@ -72,7 +72,7 @@ Inclui funções da biblioteca Matemática para arredondamento e da biblioteca T
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 542; 
+ * @POSICAO-CURSOR = 794; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
