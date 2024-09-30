@@ -2,7 +2,7 @@ programa
 {
 	/*
 	Programa "Calculadora": recebe dois valores, oferece opções cálculos, calcula, devolve os resultados. 
-	Utiliza Repetição com flag para interronper sair da exceção.
+	Utiliza Repetição com flag para interromper sair da exceção.
 	*/
 
 	inclua biblioteca Tipos --> t
@@ -56,7 +56,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 43; 
+ * @POSICAO-CURSOR = 162; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
