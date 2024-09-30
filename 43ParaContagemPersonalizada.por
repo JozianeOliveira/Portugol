@@ -21,6 +21,10 @@ programa
 		escreva("Passo: ")
 		leia(num3)
 
+		se (num3 < 0) {
+			num3 = num3 * (-1)
+		}
+		
 		se (num1 < num2) {
 			para(c = num1; c <= num2; c += num3) {
 			escreva(c + "...")
@@ -40,7 +44,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1020; 
+ * @POSICAO-CURSOR = 897; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
