@@ -7,6 +7,7 @@ programa
 	
 	inclua biblioteca Matematica --> m
 	inclua biblioteca Tipos --> t
+	inclua biblioteca Texto --> txt
 	funcao inicio()
 	{
 	cadeia nome, nmaior = "", nmenor = ""
@@ -18,7 +19,7 @@ programa
 			escreva("OBS: Digite ACABOU no nome para parar\n")
 			escreva("Nome: ")
 			leia(nome)			
-			se (nome == "ACABOU" ou nome == "acabou") {
+			se (txt.caixa_alta(nome) == "ACABOU") {
 				pare
 			}
 			escreva("Idade: ")
@@ -59,7 +60,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 49; 
+ * @POSICAO-CURSOR = 712; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
