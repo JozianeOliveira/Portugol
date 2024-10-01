@@ -9,11 +9,11 @@ programa
 	funcao inicio()
 	{
 	inteiro num = 0, cont = 0, soma = 0, maior = 0
-	real media = 0
+	real media = 0.0
 	
 	enquanto (num != 9999) {
 		escreva("--------------------\n")
-		escreva(cont + "º valor [9999 faz parar]")
+		escreva((cont + 1) + "º valor [9999 faz parar]")
 		escreva("\n--------------------\n")
 		escreva("Número: ")
 		leia(num)
@@ -43,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 925; 
+ * @POSICAO-CURSOR = 408; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
