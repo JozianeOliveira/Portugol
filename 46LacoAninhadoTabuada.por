@@ -5,6 +5,7 @@ programa
 	Um laço controla as tabuadas e o outro faz as multiplicações de 1 a 10 para cada número.
 	*/
 	
+	inclua biblioteca Util --> u
 	funcao inicio()
 	{
 	inteiro ini, fim, x, y
@@ -21,8 +22,10 @@ programa
 
 				para (y = 1; y <= 10; y ++) {
 					escreva("\n" + x + " x " + y + " = " + (x * y))
+					u.aguarde(300)
 				}				
 		}
+		escreva("\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 149; 
+ * @POSICAO-CURSOR = 693; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
