@@ -24,8 +24,6 @@ O usuário é questionado se deseja continuar inserindo números, e ao final, o 
 				se (t.cadeia_e_inteiro(teclado, 10)) {
 					num = t.cadeia_para_inteiro(teclado, 10)
 					se (num >= 1 e num <= 10) {
-						soma += num
-						cont ++
 						pare
 					} senao {
 						escreva("<< ERRO >> O número deve estar entre 1 e 10!\n")
@@ -34,6 +32,8 @@ O usuário é questionado se deseja continuar inserindo números, e ao final, o 
 					escreva("<< ERRO >> O valor deve ser um número!\n") 
 				}
 			}
+			cont ++
+			soma += num
 	
 			enquanto (verdadeiro) {
 					escreva("Quer continuar? [S/N] ")
@@ -58,7 +58,7 @@ O usuário é questionado se deseja continuar inserindo números, e ao final, o 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1482; 
+ * @POSICAO-CURSOR = 1105; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -12,7 +12,7 @@ programa
 	inclua biblioteca Tipos --> t
 	funcao inicio()
 	{
-		inteiro cont = 0, idade, maior = 0, menor = 0
+		inteiro cont = 0, idade = 0, maior = 0, menor = 0
 		cadeia resp = "", nome = "", teclado, velho = "", jovem = ""
 	
 		faca {
@@ -36,23 +36,6 @@ programa
 				se (t.cadeia_e_inteiro(teclado, 10)) {
 					idade = t.cadeia_para_inteiro(teclado, 10)
 					se (idade >= 0 e idade <= 150) {
-
-						se (cont == 0) { // Primeira pessoa cadastrada
-							menor = idade
-							jovem = nome
-							maior = idade
-							velho = nome
-						} senao {
-							se (idade < menor){
-								menor = idade
-								jovem = nome
-							}
-	
-							se (idade > maior) {
-								maior = idade
-								velho = nome
-							}
-						}
 						pare
 					} senao {
 						escreva("<< ERRO >> Idade Inválida!\n")
@@ -63,6 +46,22 @@ programa
 			}
 
 			cont ++ // Incremento do contador após validação de nome e idade
+			se (cont == 1) { // Primeira pessoa cadastrada
+				menor = idade
+				jovem = nome
+				maior = idade
+				velho = nome
+			} senao {
+				se (idade < menor){
+					menor = idade
+					jovem = nome
+				}
+	
+				se (idade > maior) {
+					maior = idade
+					velho = nome
+				}
+			}			
 
 			enquanto (verdadeiro) {
 				escreva("Quer continuar? [S/N] ")
@@ -91,7 +90,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 494; 
+ * @POSICAO-CURSOR = 1888; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
