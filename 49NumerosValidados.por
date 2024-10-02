@@ -1,7 +1,9 @@
 programa
 {
 	/*
-	Programa "Números validados": 
+	Programa "Números validados": permite ao usuário inserir números inteiros entre 1 e 10, validando as entradas e acumulando a soma desses números. 
+Utiliza as bibliotecas Texto e Tipos para manipulação de cadeias de texto e verificação de tipos. 
+O usuário é questionado se deseja continuar inserindo números, e ao final, o programa exibe a quantidade de valores digitados e a soma total.
 	*/
 	
 	inclua biblioteca Texto --> txt
@@ -56,7 +58,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 34; 
+ * @POSICAO-CURSOR = 405; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
