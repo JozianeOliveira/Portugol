@@ -28,7 +28,7 @@ programa
 		
 		escreva("\nO número " + num + " foi divisível " + cont + " vezes")
 
-		se (cont == 2) {
+		se (cont <= 2) {
 			escreva("\nLogo, ele é PRIMO!\n")
 		} senao {
 			escreva("\nLogo, ele não é PRIMO!\n")
@@ -41,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 500; 
+ * @POSICAO-CURSOR = 1018; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
