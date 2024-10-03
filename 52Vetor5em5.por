@@ -24,6 +24,7 @@ programa
 
 		para (pos = 0; pos < u.numero_elementos(vetor); pos ++) {
 			escreva(pos + ":{" + vetor[pos] + "} ")
+			u.aguarde(300)
 		}
 		escreva("\n")
 	}
@@ -33,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 293; 
+ * @POSICAO-CURSOR = 798; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {num, 12, 9, 3}-{vetor, 12, 18, 5}-{pos, 12, 29, 3};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
