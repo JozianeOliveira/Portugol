@@ -35,10 +35,10 @@ programa
         }
 
         // Iniciar o jogo
-        inteiro total = 5, tentativas = 1, pontos = 0, lin, col
+        inteiro total = 3, tentativas = 1, pontos = 0, lin, col
         logico bum = falso
         
-        enquanto (bum == falso e tentativas <= total) {
+        enquanto (tentativas < total ou pontos < total * 2) {
             para (inteiro l = 0; l < u.numero_linhas(jogo); l ++) {
                 para (inteiro c = 0; c < u.numero_colunas(jogo); c ++) {
                     se (jogo[l][c] == '-' ou jogo[l][c] == '0') {
@@ -55,12 +55,12 @@ programa
             escreva("Faça a sua jogada! (Tentativa: " + tentativas + ")\n")
             
             faca {
-                escreva("Linha (0 a 4) = ")
+                escreva("Linha = ")
                 leia(lin)
             } enquanto (lin < 0 ou lin >= u.numero_linhas(jogo))
 
             faca {
-                escreva("Coluna (0 a 4) = ")
+                escreva("Coluna = ")
                 leia(col)
             } enquanto (col < 0 ou col >= u.numero_colunas(jogo))
             
@@ -68,6 +68,7 @@ programa
                 escreva("--> TIRO ERRADO! Você acertou uma BOMBA!\n")
                 bum = verdadeiro
                 jogo[lin][col] = '*'
+                pare
             } senao se (jogo[lin][col] == '-') {
                 escreva("--> TIRO CERTO! Parabéns!\n")
                 jogo[lin][col] = 'V'
@@ -81,11 +82,22 @@ programa
         }
 
         escreva("===========================================\n")
+        para (inteiro l = 0; l < u.numero_linhas(jogo); l ++) {
+        	para (inteiro c = 0; c < u.numero_colunas(jogo); c ++) {
+        		escreva(jogo[l][c] + " ")
+        		u.aguarde(200)
+        	}
+        	escreva("\n")
+        }
+        
+        escreva("===========================================\n")
         se (bum) {
             escreva("GAME OVER! Você perdeu.\n")
         } senao {
             escreva("PARABÉNS! Você venceu!\n")
         }
+        escreva("===========================================")
+        escreva("\nVocê fez " + pontos + " pontos em " + (tentativas - 1) + " tentativas!\n\n")
     }
 }
 
@@ -94,7 +106,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 501; 
+ * @POSICAO-CURSOR = 1446; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {jogo, 14, 17, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
