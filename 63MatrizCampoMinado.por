@@ -1,7 +1,7 @@
 programa
 {
     /*
-    Programa "Campo Minado":  jogo clássico em que o jogador deve desarmar bombas escondidas em um campo. 
+    Programa "Campo Minado" com matrizes:  jogo clássico em que o jogador deve desarmar bombas escondidas em um campo. 
     O tabuleiro é representado por uma matriz 5x5, onde cada célula pode conter uma bomba ou ser uma posição segura. 
     O jogador tem um número limitado de tentativas para adivinhar as posições das bombas, representadas por '0'. 
     O jogo utiliza estruturas de repetição e condicionais para gerenciar a lógica do jogo e exibir o estado do tabuleiro após cada jogada. 
@@ -106,7 +106,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1446; 
+ * @POSICAO-CURSOR = 58; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {jogo, 14, 17, 4};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
