@@ -10,7 +10,7 @@ programa
 
 	inclua biblioteca Util --> u
 	funcao analisar(inteiro num[]) {
-		escreva("====== ANALISANDO O VETOR ======\n")
+		escreva("====== ANALISANDO O VETOR ======\n")
 		u.aguarde(500)
 
 		inteiro tam = u.numero_elementos(num)	
@@ -45,10 +45,12 @@ programa
 		inteiro vet[] = {2, 8, 7, 4, 3, 1}
 		analisar(vet)
 
-		escreva("\n\n")
+		escreva("\n\n================================\n\n")
 
 		inteiro vet1[] = {0, 2, 4, 6, 9}
 		analisar (vet1)
+
+		escreva("\n\n================================\n")
 		
 	}
 }
@@ -57,7 +59,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 536; 
+ * @POSICAO-CURSOR = 1671; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
