@@ -8,7 +8,6 @@ programa
 	A função `inicio` solicita o número de termos ao usuário e exibe a sequência gerada pela função `fibonacci`.
 	*/
 	
-	inclua biblioteca Util --> u
 	funcao cadeia fibonacci(inteiro n) {
 		cadeia fib = "0 -> 1 -> "
 		inteiro p1, p2, p3
@@ -37,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 502; 
+ * @POSICAO-CURSOR = 616; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
