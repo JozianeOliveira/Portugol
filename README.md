@@ -1,4 +1,4 @@
-<h1>Programação Básica com Portugol Studio</h1>
+<h1>Programação com Portugol Studio</h1>
 
 <p align="left">💻📚 Repositório contendo os exercícios realizados durante o curso de Programação Básica utilizando o Portugol Studio. <br>
   
