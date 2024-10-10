@@ -1,6 +1,6 @@
 <h1>Programação com Portugol Studio</h1>
 
-<p align="left">💻📚 Repositório contendo os exercícios realizados durante o curso de Programação Básica utilizando o Portugol Studio. <br>
+<p align="left">💻📚 Repositório contendo exercícios realizados durante o curso de Programação Básica utilizando o Portugol Studio. <br>
   
 📝💡 Cada exercício aborda diferentes conceitos de programação, como estruturas de controle, variáveis, vetores, matrizes, e rotinas, com o objetivo de treinar e consolidar o aprendizado.</p>
 
