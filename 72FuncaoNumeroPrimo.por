@@ -1,23 +1,21 @@
 programa
 {
 	/*
-	Programa "Número Primo": verifica se um número fornecido pelo usuário é primo. Ele utiliza um laço 'para' para contar quantos divisores o 
-	número possui, armazenando essa contagem na variável 'cont'. Se o número tiver exatamente dois divisores (1 e ele mesmo), o programa retorna 
-	"Primo", caso contrário, retorna "NÃO É PRIMO". As funções 'leia' e 'escreva' são usadas para entrada e saída de dados.
+	Programa "Número Primo": verifica se um número fornecido pelo usuário é primo. A função 'primo' percorre os números de 1 até 'n', verificando 
+se 'n' é divisível por 'c'. Se for divisível por qualquer número além de 1 e ele mesmo, o programa define 'eprimo' como falso e interrompe o 
+laço com 'pare'. Caso contrário, mantém 'eprimo' como verdadeiro. No final, a função retorna 'verdadeiro' se o número for primo, ou 'falso' 
+caso contrário. As funções 'leia' e 'escreva' são usadas para entrada e saída de dados.
 	*/
 	
-	funcao cadeia primo (inteiro n) {
-		inteiro cont = 0
+	funcao logico primo (inteiro n) {
+		logico eprimo = verdadeiro
 		para (inteiro c = 1; c <= n; c ++) {
 			se (n % c == 0) {
-				cont ++
+				eprimo = falso
+				pare
 			}
 		}
-		se (cont <= 2) {
-			retorne "PRIMO"
-		} senao {
-			retorne "NÃO É PRIMO"
-		}
+		retorne eprimo
 	}
 	
 	funcao inicio()
@@ -26,7 +24,11 @@ programa
 		
 		escreva("Digite um número para saber se ele é primo: ")
 		leia(num)
-		escreva("\nO número " + num + " é " + primo(num) + "\n")
+		se (primo(num)) {
+			escreva("\nO número " + num + " é primo.\n")
+		} senao {
+			escreva("\nO número " + num + " não é primo.\n")
+		}
 	}
 }
 
@@ -35,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 299; 
+ * @POSICAO-CURSOR = 529; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
