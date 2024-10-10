@@ -11,7 +11,7 @@ programa
 		se (m < 3) {
 			retorne "Reprovado"
 		} senao se (m < 7) {
-			retorne "Em recuperação"
+			retorne "em recuperação"
 		} senao {
 			retorne "Aprovado"
 		}
@@ -23,7 +23,7 @@ programa
 	
 	funcao inicio()
 	{
-		real nota1 = 5.5
+		real nota1 = 3.5
 		real nota2 = 9.0
 		escreva("Com as notas " + nota1 + " e " + nota2 + "\n")
 		escreva("O aluno está " + situacao(media(nota1, nota2)) + "\n")
@@ -34,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 553; 
+ * @POSICAO-CURSOR = 667; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
